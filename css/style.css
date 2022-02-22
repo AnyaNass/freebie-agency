@@ -107,6 +107,7 @@ li:hover > .submenu{
 	font-weight: 700;
 	position: relative;
 	cursor: pointer;
+	display: none;
 }
 .slick-active button{
 	font-size: 36px;
@@ -121,17 +122,34 @@ li:hover > .submenu{
 }
 h1 {
 	font-weight: 500;
-	font-size: 72px;
+	font-size: 36px;
 	padding: 0;
-	margin: 260px 0 0;
+	margin: 200px 0 0;
 	letter-spacing: 0.02em;
 }
 .bunner_text {
 	font-family: "Open Sans";
 	margin: 25px 0 0;
-	font-size: 20px;
+	font-size: 18px;
 	letter-spacing: 0.1em;
 }
+@media (min-width:768px) {
+	h1{
+		font-size: 72px;
+	}
+	.bunner_text{
+		font-size: 20px;
+	}
+	.slick-dots li button{
+		display: block;
+	}
+}
+@media (min-width:962px){
+	h1{
+		margin: 260px 0 0;
+	}
+}
+
 .block_about {
 	padding: 100px 0;
 }
