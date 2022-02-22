@@ -13,11 +13,83 @@ body {
 	font-family: "Oswald";
 	height: 100%;
 }
+body.light{
+	background-color: white;
+}
+body.dark{
+	background-color: #000;
+	color: #fff;
+}
+body.dark .about h2, body.dark .about p{
+	color: #fff;
+}
+body.dark .block_service{
+	background-color: #000;
+}
+body.dark .service_item{
+	background-color: rgba(226, 225, 225, 0.596);
+}
+body.dark h4{
+	color: #fff;
+}
+body.dark h4::after {
+	background-color: #fff;
+}
+body.dark .title_item .subtitle, body.dark .service_item p, 
+body.dark .service_item p a{
+	color: #fff;
+}
+body.dark .title_item .subtitle:after{
+	background-color: #fff;
+}
+body.dark h5{
+	color: #fff;
+}
+body.dark .works_item_subtitle{
+	color: #fff;
+}
+body.dark .more_works a{
+	color: #fff;
+}
+body.dark .block_team{
+	background-color: #000;
+}
+body.dark .block_blog p{
+	color: #fff;
+}
+body.dark .autor:after{
+	color: #fff;
+}
+body.dark .stars li{
+	color: #fff;
+}
 .wrapper{
 	min-height: 100%;
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
+	position: relative;
+}
+.black-white-buttons{
+	position: absolute;
+	z-index: 5;
+	top: 0%;
+	left: 0%;
+	margin: 20px 0 0 20px;
+}
+.black-white-buttons button{
+	height: 40px;
+	width: 40px;
+	background-color: #d3d3d3;
+	border: 1px solid #252525;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.black-white-buttons button:hover{
+	background-color: #ada9a9
+}
+.black-white-buttons button:active{
+	background-color: #d3d3d3;
 }
 .main{
 	flex: 1 1 auto;
@@ -749,7 +821,7 @@ h5{
 		left: -25%;
 		top: 35%;
 	}
-	.works_item_right h5{
+	.works_item_left h5{
 		right: -25%;
 	}
 	.more_works{
