@@ -3,8 +3,7 @@ $('.slider_bunner').slick({
 	infinite: true,
 	speed: 300,
 	slidesToShow: 1,
-	
- });
+});
 
 
 $('.blog').slick();
