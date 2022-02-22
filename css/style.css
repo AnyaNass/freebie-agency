@@ -294,7 +294,7 @@ h4::after{
 	letter-spacing: 0.1em;
 }
 .block_works {
-	padding: 200px 15px 150px;
+	padding: 150px 15px 50px;
 	position: relative;
 }
 .works{
@@ -302,7 +302,7 @@ h4::after{
 }
 .works_title {
 	position: absolute;
-	top: 0%;
+	top: 1%;
 }
 .works_title_row {
 	list-style-type: none;
@@ -320,11 +320,7 @@ h4::after{
 	text-decoration: none;
 }
 .works_row{
-	display: flex;
-	flex-direction: row-reverse;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	margin: 50px 0 0;
+	margin: 0;
 }
 .works_item{
 	position: relative;
@@ -333,27 +329,27 @@ h4::after{
 	text-decoration: line-through #70BF73;
 }
 .works_item_right{
-	margin: -150px 0 0;
+	margin: 0;
 }
 .works_item_left{
-	margin: 150px 0 0;
+	margin: 50px 0 0;
 }
 h5{
 	max-width: 400px;
 	font-family: 'Oswald';
 	position: absolute;
 	font-weight: 300;
-	font-size: 48px;
+	font-size: 32px;
 	color: #252525;
 	position: absolute;
 }
 .works_item_right h5{
 	text-align: start;
-	left: -25%;
-	top: 35%;
+	left: 5%;
+	top: 60%;
 }
 .works_item_left h5{
-	right: -25%;
+	right: 5%;
 	top: 60%;
 }
 .works_item_subtitle{
@@ -381,6 +377,10 @@ h5{
 .left-text{
 	text-align: start;
 	margin: 0 0 0 100px;
+}
+.more_works{
+	text-align: center;
+	margin: 30px 0 0;
 }
 .more_works a{
 	text-decoration: none;
@@ -647,22 +647,8 @@ h5{
 	.service_item:last-child{
 		margin: 0;
 	}
-	.works_title {
-		top: 5%;
-	}
-	.works_title_row{
-		margin: 50px 0 0;
-	}
-	.works_title_row  li {
-		margin: 0 40px 0 0;
-	}
-	.works_title_row  li a{
-		font-size: 13px;
-		color: #c2c2c2;
-	}
-	.works_title_row  li a:hover{
-		color: #252525;
-	}
+
+
 }
 @media (min-width:962px){
 	h1{
@@ -724,5 +710,50 @@ h5{
 	}
 	.service_item:hover .more a{
 		opacity: 1;
+	}
+	.block_works {
+		padding: 200px 15px 150px;
+	}
+	.works_title{
+		top: 5%;
+	}
+	.works_title_row{
+		margin: 50px 0 0;
+	}
+	.works_title_row  li {
+		margin: 0 40px 0 0;
+	}
+	.works_title_row  li a{
+		font-size: 13px;
+		color: #c2c2c2;
+	}
+	.works_title_row  li a:hover{
+		color: #252525;
+	}
+	.works_row{
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	.works_item_right{
+		margin: -150px 0 0;
+	}
+	.works_item_left{
+		margin: 150px 0 0;
+	}
+	h5{
+		font-size: 48px;
+	}
+	.works_item_right h5{
+		left: -25%;
+		top: 35%;
+	}
+	.works_item_right h5{
+		right: -25%;
+	}
+	.more_works{
+		text-align: end;
+		margin: 0;
 	}
 } 
