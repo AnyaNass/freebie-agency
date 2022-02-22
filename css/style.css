@@ -133,49 +133,26 @@ h1 {
 	font-size: 18px;
 	letter-spacing: 0.1em;
 }
-@media (min-width:768px) {
-	h1{
-		font-size: 72px;
-	}
-	.bunner_text{
-		font-size: 20px;
-	}
-	.slick-dots li button{
-		display: block;
-	}
-}
-@media (min-width:962px){
-	h1{
-		margin: 260px 0 0;
-	}
-}
-
-.block_about {
-	padding: 100px 0;
-}
 .about{
-	margin: 130px 0 115px;
-}
-.about-content{
-	display: flex;
+	padding: 50px 0;
 }
 .about-item{
 	display: flex;
 	justify-content: space-between;
-	text-align: left;
+	text-align: start;
 }
 .about-item-text{
-	margin: 75px 0 0;
+	margin: 75px 0 0 20px;
 }
 h2{
-	font-size: 36px;
+	font-size: 32px;
 	font-weight: 700;
 	color: #333333;
 	letter-spacing: 0.1em;
 }
 .about-subtitle{
 	font-family: "Open Sans";
-	font-size: 42px;
+	font-size: 36px;
 	color: #504E4E;
 	letter-spacing: 0.2em;
 	margin: 25px 0 0;
@@ -196,7 +173,7 @@ h2{
 	top: 20%;
 }
 .face{
-	margin: 0 0 0 -70px;
+	margin: 0 0 0 -200px;
 	position: relative;
 	z-index: -1;
 }
@@ -210,30 +187,35 @@ h2{
 	top: 10%;
 	left: 65%;
 	z-index: -2;
+	display: none;
 }
 .right-item{
-	margin: 150px 0 0 100px;
+	margin: 0;
 }
+.right-item .about-item-text{
+	margin: 0 0 0 -300px;
+} 
 .man{
 	margin: 0 -70px 0 0 ;
 	z-index: -3;
 }
-.about-item-text .right-text{
-	margin: 160px 0 0;
+.right-item .about-item-text .right-text{
+	margin: 160px 20px 0 0;
+	text-align: start;
 }
 .block_service {
 	background-color: #fbfbfb;
-	padding: 100px 0;
+	padding: 50px 15px;
 }
 .text{
 	font-family: "Open Sans";
-	font-size: 15px;
+	font-size: 13px;
 	color: #5B5858;
 	letter-spacing: 0.1em;
 	line-height: 1.5em;
 }
 h4 {
-	font-size: 48px;
+	font-size: 36px;
 	font-weight: 700;
 	color: #252525;
 	text-align: left;
@@ -248,33 +230,15 @@ h4::after{
 	left: 0;
 	bottom: -30%;
 }
-.line_title {
-	width: 45px;
-	height: 2px;
-	background: #252525;
-	display: block;
-	margin: 10px 0 0;
-}
 .service_row {
-	display: flex;
-	justify-content: space-around;
-	margin: 85px 0 0;
+	margin: 50px 0 0;
 }
 .service_item {
 	background-color: #fff;
 	text-align: left;
 	padding: 40px;
-	margin: 0 25px 0 0;
-	border-bottom: 3px solid #fff;
-}
-.service_item:hover {
+	margin: 20px 0 0;
 	border-bottom: 3px solid #70bf73;
-}
-.service_item:hover .service_icon{
-	opacity: 1;
-}
-.service_item:hover .more a{
-	opacity: 1;
 }
 .title_item {
 	display: inline-flex;
@@ -304,7 +268,6 @@ h4::after{
 	border-radius: 50%;
 	box-shadow: 0px 0px 20px 0px #dbdbdb;
 	position: relative;
-	opacity: 0.5;
 }
 .icon {
 	position: absolute;
@@ -329,7 +292,96 @@ h4::after{
 	line-height: 1.5em;
 	font-weight: 300;
 	letter-spacing: 0.1em;
-	opacity: 0.5;
+}
+@media (min-width:768px) {
+	h1{
+		font-size: 72px;
+	}
+	.bunner_text{
+		font-size: 20px;
+	}
+	.slick-dots li button{
+		display: block;
+	}
+	.block_service{
+		padding: 75px 15px;
+	}
+	h4{
+		font-size: 42px;
+	}
+	.service_row {
+		display: flex;
+		justify-content: space-between;
+		margin: 85px 0 0;
+	}
+	.service_item{
+		margin: 0 25px 0 0;
+	}
+	.service_item:last-child{
+		margin: 0;
+	}
+}
+@media (min-width:962px){
+	h1{
+		margin: 260px 0 0;
+	}
+	.block_about {
+		padding: 100px 0;
+	}
+	.about-content{
+		display: flex;
+	}
+	.about-item-text{
+		margin: 75px 0 0;
+	}
+	h2{
+		font-size: 36px;
+	}
+	.about-subtitle{
+		font-size: 42px;
+	}
+	.face{
+		margin: 0 0 0 -70px;
+	}
+	.face::after{
+		display: block;
+	}
+	.text{
+		font-size: 15px;
+	}
+	.right-item{
+		margin: 150px 0 0 100px;
+	}
+	.right-item .about-item-text{
+		margin: 0 0 0 -160px;
+	}
+	.about-item-text .right-text{
+		margin: 160px 0 0;
+	}
+	.block_service{
+		padding: 100px 0;
+	}
+	h4{
+		font-size: 48px;
+	}
+	.service_item {
+		border-bottom: 3px solid #fff;
+	}
+	.service_icon{
+		opacity: 0.5;
+	}
+	.more a{
+		opacity: 0.5;
+	}
+	.service_item:hover {
+		border-bottom: 3px solid #70bf73;
+	}
+	.service_item:hover .service_icon{
+		opacity: 1;
+	}
+	.service_item:hover .more a{
+		opacity: 1;
+	}
 }
 .block_works {
 	padding: 200px 15px 150px;
