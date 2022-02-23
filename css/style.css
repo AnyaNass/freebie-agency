@@ -71,7 +71,7 @@ body.dark .stars li{
 	position: relative;
 }
 .black-white-buttons{
-	position: absolute;
+	position: fixed;
 	z-index: 5;
 	top: 0%;
 	left: 0%;
@@ -183,6 +183,9 @@ li:hover > .submenu{
 }
 .slick-active button{
 	font-size: 36px;
+}
+.slider_bunner .slick-next{
+	display: none;
 }
 .bunner {
 	width: 100%;
@@ -557,6 +560,9 @@ h5{
 .slick-prev{
 	left: 0;
 	transform: rotate(180deg);
+}
+body.dark .slick-prev, body.dark .slick-next{
+	background: url("../img/block_blog/next-dark.png");
 }
 .slick-next{
 	right: 0;
