@@ -20,9 +20,6 @@ body.dark{
 	background-color: #000;
 	color: #fff;
 }
-body.dark .about h2, body.dark .about p{
-	color: #fff;
-}
 body.dark .block_service{
 	background-color: #000;
 }
@@ -759,8 +756,8 @@ body.dark .blog .slick-prev, body.dark .blog .slick-next{
 	.right-item .about-item-text{
 		margin: 0 0 0 -160px;
 	}
-	.about-item-text .right-text{
-		margin: 160px 0 0;
+	.right-item .about-item-text .right-text{
+		margin: 200px 0 0 150px;
 	}
 	.block_service{
 		padding: 100px 0;
