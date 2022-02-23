@@ -184,9 +184,6 @@ li:hover > .submenu{
 .slick-active button{
 	font-size: 36px;
 }
-.slider_bunner .slick-next{
-	display: none;
-}
 .bunner {
 	width: 100%;
 	height: 100vh;
@@ -561,7 +558,7 @@ h5{
 	left: 0;
 	transform: rotate(180deg);
 }
-body.dark .slick-prev, body.dark .slick-next{
+body.dark .blog .slick-prev, body.dark .blog .slick-next{
 	background: url("../img/block_blog/next-dark.png");
 }
 .slick-next{
