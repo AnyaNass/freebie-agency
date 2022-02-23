@@ -98,11 +98,12 @@ body.dark .stars li{
 	color: white;
 	text-align: center;
 }
-nav{
+.menu_desktop{
 	position: absolute;
 	right: 15%;
 	top: 5%;
 	z-index: 5;
+	display: none;
 }
 .menu {
 	list-style-type: none;
@@ -692,6 +693,9 @@ body.dark .blog .slick-prev, body.dark .blog .slick-next{
 	letter-spacing: 0.1em;
 }
  @media (min-width:768px) { 
+	.menu_desktop {
+		display: block;
+	}
 	h1{
 		font-size: 72px;
 	}
