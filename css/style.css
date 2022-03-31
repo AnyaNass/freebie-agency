@@ -20,6 +20,18 @@ body.dark{
 	background-color: #000;
 	color: #fff;
 }
+body.dark h2{
+	color: #fff;
+}
+body.dark .about-subtitle{
+	color: #fff;
+}
+body.dark .about-item-text .text{
+	color: #fff;
+}
+body.dark .about-item-text .text::before{
+	background-color: #fff;
+}
 body.dark .block_service{
 	background-color: #000;
 }
@@ -35,6 +47,9 @@ body.dark h4::after {
 body.dark .title_item .subtitle, body.dark .service_item p, 
 body.dark .service_item p a{
 	color: #fff;
+}
+body.dark .service_item p a:hover{
+	text-decoration: underline;
 }
 body.dark .title_item .subtitle:after{
 	background-color: #fff;
