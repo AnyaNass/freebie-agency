@@ -93,10 +93,11 @@ body.dark .stars li{
 }
 .container {
 	width: 100%;
-	max-width: 1175px;
+	max-width: 1145px;
 	margin: 0 auto;
 	color: white;
 	text-align: center;
+	padding: 0 15px;
 }
 .menu_desktop{
 	position: absolute;
@@ -203,16 +204,8 @@ h1 {
 	font-size: 18px;
 	letter-spacing: 0.1em;
 }
-.about{
-	padding: 50px 0;
-}
-.about-item{
-	display: flex;
-	justify-content: space-between;
-	text-align: start;
-}
 .about-item-text{
-	margin: 75px 0 0 20px;
+	margin: 50px 0 0;
 }
 h2{
 	font-size: 32px;
@@ -229,21 +222,11 @@ h2{
 }
 .about-item-text .text{
 	margin: 30px 0 0;
-	padding: 0 0 0 50px;
+	padding: 0;
 	position: relative;
-	width: 300px;
-}
-.about-item-text .text::before{
-	content: " ";
-	width: 20px;
-   height: 2px;
-	background-color: #353535;
-	position: absolute;
-	left: 5%;
-	top: 20%;
 }
 .face{
-	margin: 0 0 0 -200px;
+	margin: 30px 0 0;
 	position: relative;
 	z-index: -1;
 }
@@ -259,19 +242,20 @@ h2{
 	z-index: -2;
 	display: none;
 }
-.right-item{
-	margin: 0;
-}
+.right-item {
+	display: flex;
+	flex-direction: column-reverse;
+ }
 .right-item .about-item-text{
-	margin: 0 0 0 -300px;
+	margin: 30px 0 0;
 } 
+.right-item .about-item-text .right-text {
+	margin: 0;
+	text-align: center;
+ }
 .man{
-	margin: 0 -70px 0 0 ;
+	margin: 30px 0 0 ;
 	z-index: -3;
-}
-.right-item .about-item-text .right-text{
-	margin: 160px 20px 0 0;
-	text-align: start;
 }
 .block_service {
 	background-color: #fbfbfb;
@@ -745,12 +729,31 @@ body.dark .blog .slick-prev, body.dark .blog .slick-next{
 	.block_about {
 		padding: 100px 0;
 	}
+	.about{
+		padding: 50px 0;
+	}
 	.about-content{
 		display: flex;
 	}
-	.about-item-text{
+	.about-item {
+		display: flex;
+		justify-content: space-between;
+		text-align: start;
+	 }
+	.about-item-text .text{
 		margin: 75px 0 0;
+		padding: 0 0 0 50px;
+	
 	}
+	.about-item-text .text::before {
+		content: " ";
+		width: 20px;
+		height: 2px;
+		background-color: #353535;
+		position: absolute;
+		left: 5%;
+		top: 20%;
+	 }
 	h2{
 		font-size: 36px;
 	}
@@ -766,15 +769,20 @@ body.dark .blog .slick-prev, body.dark .blog .slick-next{
 	.text{
 		font-size: 15px;
 	}
+	.man{
+		margin: -200px 0 0;
+		z-index: -3;
+	}
 	.right-item{
 		margin: 150px 0 0 100px;
 	}
 	.right-item .about-item-text{
-		margin: 0 0 0 -160px;
+		margin: 200px 0 0;
 	}
-	.right-item .about-item-text .right-text{
+	.right-item .about-item-text .right-text {
 		margin: 200px 0 0 150px;
-	}
+		text-align: start;
+	 }
 	.block_service{
 		padding: 100px 0;
 	}
